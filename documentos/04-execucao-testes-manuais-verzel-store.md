@@ -15,7 +15,7 @@
 ## Convenção de execução
 
 - **PASSOU:** resultado obtido atende integralmente ao resultado esperado.
-- **FALHOU:** resultado obtido diverge do resultado esperado ou apresenta comportamento incorreto.
+- **NÃO PASSOU:** resultado obtido diverge do resultado esperado ou apresenta comportamento incorreto.
 - **BLOQUEADO:** cenário não pôde ser executado por indisponibilidade do ambiente, dependência ou impedimento externo.
 - Registrar no campo **Resultado obtido** o comportamento real observado.
 - Inserir abaixo de cada cenário todos os prints necessários para comprovar a execução.
@@ -41,7 +41,7 @@ Cupom aplicado com 10% de desconto sobre o subtotal.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Cupom aplicado com 10% de desconto sobre o subtotal.
 
 **Veredito:** APROVADO/PASSOU
 
@@ -51,7 +51,6 @@ Validar CA01.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
 
 > **Evidências:**
 >
@@ -87,7 +86,8 @@ Código aceito independentemente de caixa; espaços no início/fim ignorados.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Código aceito independentemente de caixa; espaços no início/fim ignorados.
+
 
 **Veredito:** APROVADO/PASSOU
 
@@ -97,7 +97,6 @@ Validar CA02.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
 
 > **Evidências:**
 >
@@ -140,7 +139,7 @@ Resposta 200, sem desconto, com mensagem `Cupom inválido.`.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Resposta 200, sem desconto, com mensagem `Cupom inválido.`.
 
 **Veredito:** APROVADO/PASSOU
 
@@ -172,9 +171,9 @@ Resposta 200, sem desconto, com mensagem `Cupom expirado.`.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Resposta 200, sem desconto, com mensagem `Cupom expirado.`.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -205,9 +204,10 @@ Somente um cupom permanece aplicado; para trocar, remover o atual antes de aplic
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Somente um cupom permanece aplicado; para trocar, remover o atual antes de aplicar outro.
 
-**Veredito:** PENDENTE
+
+**Veredito:**  APROVADO/PASSOU
 
 **Descrição:**
 
@@ -215,19 +215,15 @@ Validar CA05.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[
+    ![alt text](image-21.png)
+    
+![alt text](image-22.png)
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
+]_
 
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
+
 
 ---
 
@@ -249,9 +245,9 @@ Frete R$ 0,00 e valor faltante R$ 0,00.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Frete R$ 0,00 e valor faltante R$ 0,00.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -259,19 +255,15 @@ Validar CA06.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[
+    ![alt text](image-23.png)
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
+!![alt text](image-29.png)
 
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
+
+]_
+
 
 ---
 
@@ -293,9 +285,9 @@ Frete R$ 19,90 e valor faltante = R$ 200,00 - subtotal, nunca negativo.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Frete R$ 19,90 e valor faltante = R$ 200,00 - subtotal, nunca negativo.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -303,19 +295,8 @@ Validar CA07.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
-
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
-
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
+> _[![alt text](image-30.png)i]_
 
 ---
 
@@ -337,9 +318,10 @@ Elegibilidade do frete considera o subtotal antes do desconto; subtotal >= R$ 20
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Elegibilidade do frete considera o subtotal antes do desconto; subtotal >= R$ 200,00 gera frete R$ 0,00.
 
-**Veredito:** PENDENTE
+
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -347,19 +329,11 @@ Validar CA08.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-31.png)
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
+![alt text](image-32.png)]_
 
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
 
 ---
 
@@ -381,9 +355,9 @@ Desconto de 10% somente sobre produtos; frete de R$ 19,90 não sofre desconto.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Desconto de 10% somente sobre produtos; frete de R$ 19,90 não sofre desconto.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -391,19 +365,9 @@ Validar CA09.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-33.png)]_
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
-
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
 
 ---
 
@@ -425,9 +389,9 @@ API rejeita valores que não sejam inteiros >= 1 com `QUANTIDADE_INVALIDA`.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+API rejeita valores que não sejam inteiros >= 1 com `QUANTIDADE_INVALIDA`.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -435,23 +399,13 @@ Validar regra de quantidade.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-37.png)]_
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
-
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
 
 ---
 
-## CT-11 — Rejeitar quantidade superior a 5
+## CT-11 — Rejeitar quantidade superior a 5 - Bug na API - Validação Manual
 
 **Pré-requisito:** API disponível.
 
@@ -469,9 +423,9 @@ Status 422 com `QUANTIDADE_MAXIMA_EXCEDIDA`.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Status 200.
 
-**Veredito:** PENDENTE
+**Veredito:** REPROVADO/NÃO PASSOU
 
 **Descrição:**
 
@@ -479,19 +433,15 @@ Validar CA10.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
 
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-34.png)
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
+![alt text](image-35.png)
 
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
+![alt text](image-36.png)]_
+
+-> Encontramos um bug, deveria retornar outra exception, mas retornou 200 OK. Esse erro já foi reportado e será indicado com mais detalhes onde ser consultado no readme.
 
 ---
 
@@ -513,9 +463,9 @@ Valores monetários arredondados para 2 casas.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Valores monetários arredondados para 2 casas.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -523,19 +473,15 @@ Validar CA11.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
 
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-38.png)
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
+![alt text](image-39.png)
 
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
+![alt text](image-40.png)
+
+]_
 
 ---
 
@@ -557,9 +503,9 @@ Total corresponde à fórmula documentada.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Total corresponde à fórmula documentada.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -567,19 +513,14 @@ Validar consistência do cálculo.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
 
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[C![alt text](image-41.png)
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
+![alt text](image-42.png)
 
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
+]_
+
 
 ---
 
@@ -601,9 +542,9 @@ Status 422 com `ITENS_OBRIGATORIOS`.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Status 422 com `ITENS_OBRIGATORIOS`.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -611,23 +552,16 @@ Validar contrato da API.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-45.png)
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
+![alt text](image-46.png)]_
 
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
+
 
 ---
 
-## CT-15 — Rejeitar item inválido
+## CT-15 — Rejeitar item inválido - Cenário Feliz
 
 **Pré-requisito:** API disponível.
 
@@ -645,9 +579,10 @@ Status 422 com `ITEM_INVALIDO`.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Status 422 com `ITEM_INVALIDO`.
 
-**Veredito:** PENDENTE
+
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -655,19 +590,43 @@ Validar estrutura mínima do item.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-48.png)]_
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
+---
 
-> **Evidência 3:**
+## CT-15.1 — item inválido - Bug na API - Validação Manual
+
+**Pré-requisito:** API disponível.
+
+**Prioridade:** ALTA
+
+**Tipo:** FUNCIONAL
+
+**Passos:**
+
+1. Enviar item sem produtoId e/ou quantidade válida. 2. Analisar.
+
+**Resultado esperado:**
+
+Esperado: HTTP 422, código ITEM_INVALIDO.
+
+**Resultado obtido:**
+
+Defeito identificado: HTTP 422, mas o código retornado é PRODUTO_NAO_ENCONTRADO.
+
+
+**Veredito:** REPROVADO/NÃO PASSOU
+
+**Descrição:**
+
+Validar estrutura mínima do item.
+
+**Evidências:**
+
 >
-> _[Cole o print aqui, se necessário]_
+> _[![alt text](image-75.png)]_
+
 
 ---
 
@@ -689,9 +648,9 @@ Status 422 com `PRODUTO_NAO_ENCONTRADO`.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Status 422 com `PRODUTO_NAO_ENCONTRADO`.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -699,19 +658,9 @@ Validar referência aos produtos.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
 
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
-
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
-
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
+> _[![alt text](image-47.png)]_
 
 ---
 
@@ -733,9 +682,9 @@ Status 422 com `ITEM_DUPLICADO`.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Status 422 com `ITEM_DUPLICADO`.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -743,19 +692,11 @@ Validar regra de duplicidade.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
 
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-49.png)]_
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
 
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
 
 ---
 
@@ -777,9 +718,9 @@ Status 201, número no formato VZ-000000 e resumo com valores do cálculo.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Status 201, número no formato VZ-000000 e resumo com valores do cálculo.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -787,19 +728,10 @@ Validar fluxo de confirmação.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
 
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-50.png)]_
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
-
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
 
 ---
 
@@ -821,9 +753,9 @@ Cupom inexistente: 422 `CUPOM_INVALIDO`; expirado: 422 `CUPOM_EXPIRADO`.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Cupom inexistente: 422 `CUPOM_INVALIDO`; expirado: 422 `CUPOM_EXPIRADO`.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -831,19 +763,13 @@ Validar erros do endpoint de pedidos.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-51.png)
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
+![alt text](image-52.png)
 
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
+]_
+
 
 ---
 
@@ -865,9 +791,9 @@ Dados inválidos são rejeitados com 422 `DADOS_INVALIDOS` e detalhes em `campos
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Dados inválidos são rejeitados com 422 `DADOS_INVALIDOS` e detalhes em `campos`.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -875,19 +801,13 @@ Validar regras preexistentes.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
+![alt text](image-54.png)
 
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
+]_
+
 
 ---
 
@@ -909,9 +829,9 @@ _Cole aqui os prints da execução deste cenário._
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+400 `JSON_INVALIDO`; 404 `ROTA_NAO_ENCONTRADA`; 405 `METODO_NAO_PERMITIDO`.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -919,19 +839,15 @@ Validar padrão de erros.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-58.png)
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
+![alt text](image-56.png)
 
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
+![alt text](image-57.png)
+
+]_
+
 
 ---
 
@@ -953,9 +869,9 @@ Produto existente retorna 200; inexistente retorna 404 `PRODUTO_NAO_ENCONTRADO`.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Produto existente retorna 200; inexistente retorna 404 `PRODUTO_NAO_ENCONTRADO`.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -963,19 +879,13 @@ Validar endpoint de produto.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
 
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-59.png)
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
+![alt text](image-60.png)]_
 
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
+
 
 ---
 
@@ -993,13 +903,13 @@ _Cole aqui os prints da execução deste cenário._
 
 **Resultado esperado:**
 
-Carrinho é compartilhado somente na aba do navegador; os demais contextos iniciam vazios.
+Carrinho é compartilhado somente na aba do navegador; os demais contextos iniciam vazios. Ou seja, os itens adicionados em uma aba não se reprlicam em outra. 
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Carrinho é compartilhado somente na aba do navegador; os demais contextos iniciam vazios. Ou seja, os itens adicionados em uma aba não se reprlicam em outra. 
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -1007,19 +917,18 @@ Validar comportamento explicitamente documentado.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[ ![alt text](image-62.png)
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
+   ![alt text](image-63.png) 
 
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
+![alt text](image-64.png)
+
+![alt text](image-65.png)
+
+    
+]_
+
 
 ---
 
@@ -1043,9 +952,9 @@ Frete de R$19,90; freteGratis=false; valorFaltanteFreteGratis=R$0,01.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Frete de R$19,90; freteGratis=false; valorFaltanteFreteGratis=R$0,01.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -1053,19 +962,13 @@ Validar limite inferior da regra CA06/CA07.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
+![alt text](image-66.png)
 
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
+]_
+
 
 ---
 
@@ -1089,9 +992,9 @@ Frete R$0,00; freteGratis=true; valorFaltanteFreteGratis=R$0,00.
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Frete R$0,00; freteGratis=true; valorFaltanteFreteGratis=R$0,00.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -1099,19 +1002,12 @@ Validar limite superior da regra CA06.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
+> _[
+    
+![alt text](image-67.png)
 
-> **Evidência 1:**
->
-> _[Cole o print aqui]_
+]_
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
-
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
 
 ---
 
@@ -1136,9 +1032,10 @@ Subtotal R$210,00; desconto R$21,00; frete R$0,00; freteGratis=true; total R$189
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+200 OK. Subtotal R$210,00; desconto R$21,00; frete R$0,00; freteGratis=true; total R$189,00. A elegibilidade do frete considera o subtotal antes do desconto.
 
-**Veredito:** PENDENTE
+
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -1146,19 +1043,9 @@ Cenário crítico para CA08.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-68.png)]_
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
-
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
 
 ---
 
@@ -1182,9 +1069,9 @@ A interface não deve permitir que o pedido/carrinho contenha mais de 5 unidades
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+A interface não deve permitir que o pedido/carrinho contenha mais de 5 unidades do mesmo produto; registrar eventual mensagem de validação exibida.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -1192,19 +1079,11 @@ Complementa a validação da CA10 no nível da interface.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-69.png)
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
+    ]_
 
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
 
 ---
 
@@ -1228,9 +1107,9 @@ HTTP 200; resposta em JSON contendo os produtos P001 a P008 conforme documentaç
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+HTTP 200; resposta em JSON contendo os produtos P001 a P008 conforme documentação.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -1238,19 +1117,9 @@ Complementa o cenário de consulta de produto individual.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-70.png)]_
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
-
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
 
 ---
 
@@ -1273,9 +1142,9 @@ HTTP 200; subtotal R$239,70; desconto R$23,97; frete R$0,00; freteGratis=true; v
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+HTTP 200; subtotal R$239,70; desconto R$23,97; frete R$0,00; freteGratis=true; valorFaltanteFreteGratis=R$0,00; total R$215,73; cupom.aplicado=true; mensagem de cupom aplicado com 10% de desconto.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -1283,19 +1152,9 @@ Reproduzir o exemplo oficial da documentação.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-71.png)]_
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
-
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
 
 ---
 
@@ -1320,9 +1179,9 @@ Os valores apresentados na interface devem ser iguais aos valores retornados pel
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+Os valores apresentados na interface foram ser iguais aos valores retornados pela API para o mesmo conjunto de itens e cupom.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -1330,19 +1189,9 @@ Valida a integração entre interface e API, considerando que os cálculos são 
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
-
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-72.png)]_
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
-
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
 
 ---
 
@@ -1366,9 +1215,9 @@ As duas formas de CEP, com e sem hífen, devem ser aceitas conforme regra docume
 
 **Resultado obtido:**
 
-_Preencher após a execução._
+As duas formas de CEP, com e sem hífen, devem ser aceitas conforme regra documentada de CEP com 8 dígitos.
 
-**Veredito:** PENDENTE
+**Veredito:** APROVADO/PASSOU
 
 **Descrição:**
 
@@ -1376,29 +1225,11 @@ Validar CA referente ao formato do CEP.
 
 **Evidências:**
 
-_Cole aqui os prints da execução deste cenário._
 
-> **Evidência 1:**
 >
-> _[Cole o print aqui]_
+> _[![alt text](image-73.png)i
 
-> **Evidência 2:**
->
-> _[Cole o print aqui, se necessário]_
+![alt text](image-74.png)
 
-> **Evidência 3:**
->
-> _[Cole o print aqui, se necessário]_
+]_
 
----
-
-## Encerramento da execução
-
-Após concluir os 31 cenários:
-
-- revisar todos os vereditos;
-- confirmar que os resultados obtidos estão preenchidos;
-- verificar se os cenários FALHOU possuem evidências suficientes;
-- registrar os bugs encontrados em documento próprio;
-- selecionar pelo menos 3 cenários para automação com Playwright;
-- atualizar o README com a estrutura e instruções do projeto.
