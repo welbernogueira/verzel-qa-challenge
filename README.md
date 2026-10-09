@@ -128,7 +128,7 @@ verzel-qa-challenge/
 │   ├── pedidos/        # Criação de pedidos e validações
 │   └── produtos/       # Listagem e consulta de produtos
 ├── bugs/               # Registros de defeitos e evidências
-├── documentos/         # Cenários, análise e execução manual
+├── documentos/         # Cenários, análise, Gherkin e execução manual
 ├── e2e/
 │   ├── checkout/       # Testes E2E do checkout
 │   └── cupons/         # Testes E2E de cupons, frete e cálculos
